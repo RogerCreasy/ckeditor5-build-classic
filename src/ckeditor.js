@@ -20,6 +20,9 @@ import ImageuploadPlugin from '@ckeditor/ckeditor5-image/src/imageupload';
 import LinkPlugin from '@ckeditor/ckeditor5-link/src/link';
 import ListPlugin from '@ckeditor/ckeditor5-list/src/list';
 import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
+import CodePlugin from '@ckeditor/ckeditor5-basic-styles/src/code';
+import StrikethroughPlugin from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+import UnderlinePlugin from '@ckeditor/ckeditor5-basic-styles/src/underline';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -40,7 +43,10 @@ ClassicEditor.build = {
 		ImageuploadPlugin,
 		LinkPlugin,
 		ListPlugin,
-		ParagraphPlugin
+		ParagraphPlugin,
+		CodePlugin,
+		StrikethroughPlugin,
+		UnderlinePlugin
 	],
 	config: {
 		toolbar: {
@@ -49,6 +55,9 @@ ClassicEditor.build = {
 				'|',
 				'bold',
 				'italic',
+				'underline',
+				'strikethrough',
+				'code',
 				'link',
 				'bulletedList',
 				'numberedList',
